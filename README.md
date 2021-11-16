@@ -1,6 +1,12 @@
-# virtual-spreadsheet
+# helpful-react-hooks
 
 > Some helpful hooks that I've found myself copying between projects
+
+# Install
+
+```bash
+npm install helpful-react-hooks
+```
 
 
 # Hooks
