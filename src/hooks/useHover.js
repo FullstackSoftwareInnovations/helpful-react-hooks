@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
 /* Credit: https://usehooks.com/useHover */
-export function useHover (ref = useRef(null)) {
+export function useHover (ref = useRef()) {
   const [value, setValue] = useState(false)
   const handleMouseOver = () => setValue(true)
   const handleMouseOut = () => setValue(false)
