@@ -1,13 +1,13 @@
-import {useEffect} from "react";
+import {useEffect, useRef} from "react";
 
 
-export function useClickAway(callback, ref) {
+export function useClickAway(callback, ref = useRef(null)) {
     useEffect(() => {
         /*
          * Use callback function when the target of the the click is not a child of the current React component
          */
         function handleClickOutside(event) {
-            if (ref.current && !ref.current.contains(event.target)) {
+            if (!ref?.current?.contains(event.target) ?? false) {
                 callback()
             }
         }
