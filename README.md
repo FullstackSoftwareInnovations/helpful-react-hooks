@@ -14,7 +14,7 @@ npm install helpful-react-hooks
 Callback function is run when the target of the click event is not a child of the ref React component
 
 ### useHover(ref)
-Returns true when the mouse is hovered over the ref component, false when it is not hovered
+Returns true when the mouse is hovered over the ref component or one of its children, false when it is not hovered
 
 ### useForceUpdate()
 Returns a function that, when called, forces the component to re-render
